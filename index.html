@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/Logo.png" alt="logo de alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea id="mensaje" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras mayúsculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desEncriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div class="mensaje">
+                <textarea id="texto-encriptado" class="mensaje-encriptado" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
+                <button class="btn-copiar" id="show-btn" onclick="copiarTexto()">Copiar</button>
+            </div> 
+        </section>
+    </main>
+</body>
+</html>
