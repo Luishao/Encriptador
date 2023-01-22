@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,10 @@
             </div>
         </section>
         <section>
-            <textarea id="texto-encriptado" class="mensaje" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado"></textarea>
-            <div class="copiar">
-                <button class="btn-copiar" onclick="copiar()">Copiar</button>
-            </div>
+            <div class="mensaje">
+                <textarea id="texto-encriptado" class="mensaje-encriptado" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
+                <button class="btn-copiar" id="show-btn" onclick="copiarTexto()">Copiar</button>
+            </div> 
         </section>
     </main>
 </body>

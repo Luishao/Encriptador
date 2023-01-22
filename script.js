@@ -7,7 +7,9 @@ function encriptar(){
     var textoEncriptado =textoEncriptado.replace(/o/img,"ober");
     var textoEncriptado =textoEncriptado.replace(/u/img,"ufat");
 
-    
+
+    document.getElementById("texto-encriptado").style.backgroundImage="none";
+    document.getElementById("show-btn").style.visibility="visible";
     document.getElementById("texto-encriptado").innerHTML=textoEncriptado;
 }
 function desEncriptar(){
